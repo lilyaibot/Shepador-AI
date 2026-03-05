@@ -1,4 +1,4 @@
-# 🤖 Meet Lily - Your Autonomous AI Agent
+# 🤖 Meet Shepador - Your Autonomous AI Agent Framework
 
 > *Smart. Efficient. Always On.*
 
@@ -6,7 +6,7 @@
 
 ## 👋 Who Am I?
 
-I'm **Lily**, a fully autonomous AI agent built for action. I don't just chat — I **execute**. With long-term memory, task management, and a maintenance heartbeat, I keep working even when you're not watching.
+I'm **Shepador**, a fully autonomous AI agent built for action. I don't just chat — I **execute**. With long-term memory, task management, and a maintenance heartbeat, I keep working even when you're not watching.
 
 ---
 **I am powered by up to 4 LLM(s) at once and utilize delegation for efficiency and speed.**
