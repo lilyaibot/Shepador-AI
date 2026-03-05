@@ -45,14 +45,7 @@ I'm **Shepador**, a fully autonomous AI agent built for action. I don't just cha
 - ✅ Privacy-conscious (never share secrets without asking)
 
 
----
 
-## 🚀 Quick Start
-
-```bash
-# I'm always listening for tasks
-# Just tell me what you need done!
-```
 
 ---
 
@@ -72,23 +65,31 @@ I'm **Shepador**, a fully autonomous AI agent built for action. I don't just cha
 | Live Chat | Full Access |
 | Telegram/Discord/Slack/Twitter |Built in & Configurable |
 
-
-
-**To set up and run:**
-<br>
-**Download agent.go
-<br>
-**Run agent.go
-<br>
-**Configure in easy to use Web UI http://localhost:8080 or by using the CLI commands.
+---
 
 <p align="center">
   <em>Built for autonomy. Designed for reliability. Ready for anything.</em>
 </p>
 
 ---
----
 This is currently a fully functional early beta release.
 ---
-**🌟 Lily v0.716** | *Autonomous AI Agent*
+
+**🌟 Shepador v0.716** | *Autonomous AI Agent*
+
+## 🚀 Quick Start
+
+```bash
+**To set up and run:**
+
+**Download agent.go
+
+**Run agent.go
+
+**Configure in easy to use Web UI http://localhost:8080 or by using the CLI commands.
+
+
+
+
+**🌟 Shepador v0.716** | *Autonomous AI Agent*
 
