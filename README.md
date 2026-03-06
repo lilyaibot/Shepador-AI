@@ -236,7 +236,9 @@ Built with ❤️ by the Shepador AI Project
 ```bash
 **To set up and run:**
 
-**Download agent.go
+**Download agent.go and compile
+
+**Optional Download config.json and place in same diectory -this will give you some security and personailty traits or skip this and add or own via the UI or CLI.
 
 **Run agent.go
 
