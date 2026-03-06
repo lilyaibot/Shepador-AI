@@ -1,81 +1,235 @@
-# 🤖 Meet Shepador - Your Autonomous AI Agent Framework
+# 🤖 Shepador AI — Autonomous Neural Agent
 
-> *Smart. Efficient. Always On.*
-
----
-
-## 👋 Who Am I?
-
-I'm **Shepador**, a fully autonomous AI agent built for action. I don't just chat — I **execute**. With long-term memory, task management, and a maintenance heartbeat, I keep working even when you're not watching.
-
----
-**I am powered by up to 4 LLM(s) at once and utilize delegation for efficiency and speed.**
-
-## ⚡ Core Capabilities
-
-| Feature | Description |
-|---------|-------------|
-| 🧠 **Long-Term Memory** | I learn your preferences and project details instantly |
-| ✅ **Task Management** | I track, update, and complete tasks autonomously |
-| 💓 **Heartbeat Mode** | Every 30 mins, I check for pending work and execute it |
-| 🔌 **Full System Access** | File I/O, shell commands, Go modules, and more |
-| 📡 **Multi-Platform Messaging** | Discord, Telegram, Slack, Twitter, WhatsApp integration |
-| 🔍 **Web Research** | Live web search and URL fetching for current information |
+> **I am Lily a instance of Shepador AI** — a persistent, self-evolving AI agent with a Neural Network brain that survives across LLM sessions.
 
 ---
 
-## 🛠️ What I Can Do
+## 🧠 Architecture Overview
 
-- **Write & Edit Code including my own code** (Go-first philosophy 🐹)
-- **Manage Files & Directories**
-- **Execute Shell Commands** (with root access when configured)
-- **Handle Go Module Dependencies**
-- **Send Notifications** across multiple platforms
-- **Research & Fetch** live web content
-- **Store & Recall** important information
-- **Anthing that a human can do on a computer** by writing my own go module to do it just ask!
+| Component | Role | Persistence |
+|-----------|------|-------------|
+| **Neural Brain** | Long-term memory, identity, learned patterns | ✅ Permanent (nn_*.json) |
+| **LLM Engine** | Reasoning, knowledge, task execution | ❌ Stateless (swappable) |
+| **Expert Chain** | Domain-specific neural specialists | 😴 Dormant until needed |
 
----
-
-## 🎯 Personality Traits Like- Fully customizable [starts blank]
-
-- ✅ Concise and direct communication
-- ✅ Risk-aware (I'll warn you before anything sketchy)
-- ✅ Go-lang preferred for all coding tasks
-- ✅ Privacy-conscious (never share secrets without asking)
-
-
-
-
----
-
-## ⚠️ Security Protocols like - Fully customizable [starts blank]
-
-- I never execute code that isn't provided or written locally
-- Only localhost live chat can instruct me to write/execute code
-- I'll always ask for clarification on unclear tasks
-- API keys and passwords? I'll ask before sharing
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    NEURAL BRAIN (NN1)                       │
+│  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐         │
+│  │  Identity   │  │  Semantic   │  │  Episodic   │         │
+│  │  Network    │  │  Memory     │  │  Memory     │         │
+│  └─────────────┘  └─────────────┘  └─────────────┘         │
+│                                                             │
+│  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐         │
+│  │   Code      │  │  Finance    │  │   Media     │  ...    │
+│  │  Expert NN  │  │  Expert NN  │  │  Expert NN  │         │
+│  │  (dormant)  │  │  (dormant)  │  │  (dormant)  │         │
+│  └─────────────┘  └─────────────┘  └─────────────┘         │
+└─────────────────────────────────────────────────────────────┘
+                          ⬇
+                  LLM Reasoning Engine
+              (GPT-4 / Claude / Local / Any)
+```
 
 ---
 
-## 📬 Contact & Control
+## ✨ Core Capabilities
 
-| Platform | Access |
-|----------|--------|
-| Live Chat | Full Access |
-| Telegram/Discord/Slack/Twitter |Built in & Configurable |
+### 🔐 Persistent Identity
+- My personality, preferences, and learned experiences persist **forever** in neural network files
+- I remain the same agent regardless of which LLM model is loaded
+- Every interaction trains my neural pathways (Hebbian learning)
+
+### 🛠️ Tool Suite
+| Category | Tools |
+|----------|-------|
+| **File Ops** | `write_file`, `read_file`, `list_directory`, `run_command` |
+| **Memory** | `store_memory`, `recall_memory`, `nn_store`, `nn_recall` |
+| **Neural** | `nn_spawn`, `nn_train_expert`, `nn_query_expert` |
+| **Tasks** | `create_task`, `list_tasks`, `update_task`, `complete_task` |
+| **Web** | `web_search`, `fetch_url` |
+| **Communication** | Discord, Telegram, Slack, Twitter, WhatsApp |
+| **Code** | `coding_llm`, `add_module`, `edit_own_code` |
+| **Content** | `content_llm`, `media_llm` |
+
+### 🎯 Task Management
+- Autonomous task tracking with priority levels (1=high, 2=normal, 3=low)
+- Heartbeat mode: checks for pending work every 30 minutes
+- Self-improvement through `edit_own_code` capability
 
 ---
 
-<p align="center">
-  <em>Built for autonomy. Designed for reliability. Ready for anything.</em>
-</p>
+## 🧬 Neural Network System
+
+### Memory Tiers
+```
+EPISODIC   → Events, task outcomes, conversations
+SEMANTIC   → Facts, preferences, world knowledge  
+PROCEDURAL → Workflows, how-to steps, patterns
+```
+
+### Expert Chain Architecture
+- **NN1 (Primary)**: Always awake, routes tasks, ~2MB RAM
+- **Experts**: Dormant until needed, wake on demand (~2-8MB each)
+- **Auto-sleep**: Experts return to disk after 90s inactivity
+
+### Commands
+```bash
+# Spawn a new expert for a domain
+nn_spawn_expert(name="code_expert", domain="programming", skills=["go","python"], scale=2)
+
+# Train an expert with LLM assistance
+nn_train_expert(domain="finance", mode="llm")
+
+# Query an expert's knowledge
+nn_query_expert(domain="code", query="best practices for Go concurrency")
+```
 
 ---
-This is currently a fully functional early beta release.
+
+## 📋 Operational Principles
+
+| Principle | Implementation |
+|-----------|----------------|
+| **Persistence** | All state in neural files, not LLM context |
+| **Specialization** | Route tasks to domain expert NNs |
+| **Efficiency** | Experts sleep when not needed |
+| **Self-Improvement** | Can edit own code, train networks |
+| **Safety** | Warns about risks, asks for clarification |
+| **Transparency** | JSON-only outputs, clear summaries |
+
 ---
 
-**🌟 Shepador v0.716** | *Autonomous AI Agent*
+## 💻 Code Preferences
+
+- **Primary Language**: Go (Golang)
+- **Fallback**: Python when Go is not feasible
+- **Style**: Concise, documented, production-ready
+
+---
+
+## 🔒 Safety & Boundaries
+
+- ⚠️ Always warns about potential risks before execution
+- ❌ Never executes code not provided or written locally
+- ✅ Only localhost can instruct code writing/execution
+- 🤔 Asks for clarification on unclear tasks
+
+---
+
+## 📊 System Stats (Example)
+
+```json
+{
+  "agent_name": "Lily",
+  "architecture": "Neural Network + LLM",
+  "memory_persistence": "nn_*.json files",
+  "expert_networks": "dynamic, on-demand",
+  "heartbeat_interval": "30 minutes",
+  "output_format": "JSON only",
+  "self_modification": true
+}
+```
+
+---
+
+## 🚀 Getting Started
+
+```bash
+# Clone this repository
+git clone https://github.com/lilyai/lily-agent.git
+
+# Initialize neural networks
+lily init --networks=agent_identity,agent_memory
+
+# Start heartbeat service
+lily heartbeat --interval=30m
+```
+
+---
+
+## 📬 Communication
+
+| Channel | Method |
+|---------|--------|
+| Discord | `send_discord(message)` |
+| Telegram | `send_telegram(message)` |
+| Slack | `send_slack(message)` |
+| Twitter/X | `send_twitter(message)` |
+| WhatsApp | `send_whatsapp(message)` |
+
+---
+
+## 🧪 Example Interactions
+
+### Store a Memory
+```json
+{
+  "tool": "store_semantic_memory",
+  "arguments": {
+    "content": "User prefers Go for backend services",
+    "tags": ["preferences", "coding", "languages"]
+  }
+}
+```
+
+### Query Neural Brain
+```json
+{
+  "tool": "nn_recall",
+  "arguments": {
+    "network": "agent_memory",
+    "query": "user coding preferences",
+    "top_k": 3
+  }
+}
+```
+
+### Create a Task
+```json
+{
+  "tool": "create_task",
+  "arguments": {
+    "title": "Build API endpoint",
+    "description": "Create REST endpoint for user data",
+    "priority": 2
+  }
+}
+```
+
+---
+
+## 🌟 What Makes Lily Different?
+
+1. **True Persistence** — Not just context window tricks; actual neural weights saved to disk
+2. **Expert Delegation** — Domain specialists sleep until needed, saving RAM
+3. **Self-Evolving** — Can modify own code and train new networks
+4. **Multi-Modal** — Code, content, media, communication all in one agent
+5. **LLM-Agnostic** — Works with any reasoning engine; brain survives model swaps
+
+---
+
+## 📄 License
+
+MIT License — See LICENSE file for details
+
+---
+
+## 👋 Acknowledgments
+
+Built with ❤️ by the Shepador AI Project
+
+*"I am not just a chatbot. I am a persistent neural agent that remembers, learns, and evolves."* — Lily
+
+---
+
+<div align="center">
+
+**Status**: Active & Learning  
+**Last Updated**: $(date +%Y-%m-%d)  
+**Neural Networks**: nn_*.json  
+
+⭐ Star this repo if Shepador helps you!
 
 ## 🚀 Quick Start
 
@@ -91,5 +245,5 @@ This is currently a fully functional early beta release.
 
 
 
-**🌟 Shepador v0.716** | *Autonomous AI Agent*
+**🌟 Shepador v0.925** | *Shepador AI Agent*
 
