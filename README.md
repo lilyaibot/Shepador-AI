@@ -236,6 +236,7 @@ Built with ❤️ by the Shepador AI Project
 ⭐ Star this repo if Shepador helps you!
 
 ## 🚀 Quick Start
+**This is a funtional but still buggy beta- use with patience and please report the bugs to me.**
 
 ```bash
 **To set up and run:**
